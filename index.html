@@ -25,7 +25,7 @@
     }
   });
 
-  fetch("https://github.com/maxvorster/maxproject/raw/refs/heads/main/Mario3.nes")
+  fetch("https://raw.githubusercontent.com/maxvorster/maxproject/main/Mario3.nes")
     .then(r => r.arrayBuffer())
     .then(b => {
       nes.loadROM(new Uint8Array(b));
